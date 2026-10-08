@@ -1,7 +1,0 @@
-{
-  "name": "streamlinedcontent-site",
-  "private": true,
-  "devDependencies": {
-    "@wix/cli": "latest"
-  }
-}
