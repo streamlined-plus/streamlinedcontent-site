@@ -1,0 +1,97 @@
+/* Paper Signal design tokens. White Paper is the default; add data-theme="dark" for Sculpted Dark. */
+:root {
+  --ps-bg: #EEEAE3;
+  --ps-card: #F6F3EE;
+  --ps-card-hi: #FAF7F2;
+  --ps-card-lo: #EFE9E0;
+  --ps-ink: #1E1B18;
+  --ps-soft: #6B645B;
+  --ps-faint: #B9B1A5;
+  --ps-ring: #E4DED5;
+  --ps-segment-off: #DDD5C9;
+  --ps-rule: rgba(120, 96, 70, 0.20);
+  --ps-orange: #F2561D;
+  --ps-orange-soft: #F7A06B;
+  --ps-orange-deep: #C9501A;
+  --ps-shadow: rgba(90, 66, 40, 0.16);
+  --ps-edge: rgba(255, 255, 255, 0.9);
+
+  --ps-radius: 16px;
+  --ps-font: "Inter", system-ui, Roboto, sans-serif;
+  --ps-mono: "IBM Plex Mono", "JetBrains Mono", ui-monospace, monospace;
+}
+
+[data-theme="dark"] {
+  --ps-bg: #21211F;
+  --ps-card: #262623;
+  --ps-card-hi: #2B2B28;
+  --ps-card-lo: #232320;
+  --ps-ink: #EEEAE3;
+  --ps-soft: #9A948B;
+  --ps-faint: #5E5A54;
+  --ps-ring: #33322F;
+  --ps-segment-off: #3A3937;
+  --ps-rule: rgba(238, 234, 227, 0.10);
+  --ps-orange: #F86421;
+  --ps-shadow: rgba(0, 0, 0, 0.45);
+  --ps-edge: rgba(255, 255, 255, 0.06);
+}
+
+body {
+  background: var(--ps-bg);
+  color: var(--ps-ink);
+  font-family: var(--ps-font);
+}
+
+/* Embossed paper card */
+.ps-card {
+  background: linear-gradient(180deg, var(--ps-card-hi), var(--ps-card) 50%, var(--ps-card-lo));
+  border-radius: var(--ps-radius);
+  box-shadow: inset 0 1px 0 var(--ps-edge), 0 2px 6px var(--ps-shadow), 0 10px 24px -12px var(--ps-shadow);
+  padding: 20px;
+}
+.ps-card.is-selected {
+  outline: 2px solid var(--ps-orange);
+  box-shadow: inset 0 1px 0 var(--ps-edge), 0 0 0 6px rgba(242, 86, 29, 0.12), 0 4px 18px rgba(242, 86, 29, 0.25);
+}
+
+/* Small spaced uppercase label: THURSDAY / NOV 23 */
+.ps-label {
+  font-family: var(--ps-mono);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  color: var(--ps-soft);
+}
+
+/* Big greeting */
+.ps-greeting {
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 0.92;
+}
+
+/* Paper disc (icon button, swatch) */
+.ps-disc {
+  border-radius: 50%;
+  background: radial-gradient(circle at 32% 30%, #FFFFFF 0%, #F8F4EE 25%, #E8E0D4 65%, #CFC5B6 100%);
+  box-shadow: 0 3px 6px var(--ps-shadow);
+  display: grid;
+  place-items: center;
+}
+
+/* Pills */
+.ps-pill {
+  border: 0;
+  border-radius: 999px;
+  padding: 12px 22px;
+  font: 500 16px var(--ps-font);
+  background: var(--ps-card);
+  color: var(--ps-ink);
+  box-shadow: inset 0 1px 0 var(--ps-edge), 0 2px 6px var(--ps-shadow);
+  cursor: pointer;
+}
+.ps-pill.primary {
+  background: var(--ps-orange);
+  color: #FFFFFF;
+}
