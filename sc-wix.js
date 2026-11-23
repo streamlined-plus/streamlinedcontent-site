@@ -7,7 +7,7 @@
       blueprint:  "f47b2594-1d91-42a0-896e-b213e55879e8",
       newsletter: "0fcc09fb-5e37-4b14-a09f-d72c7f619cd7"
     },
-    plans: { splus: "5c57cb60-a418-4fd2-8008-48a72848d554" },
+    plans: { splus: "5c57cb60-a418-4fd2-8008-48a72848d554", splus49: "e06e376f-e9ce-4d89-846d-be7719c9bbae", splus25: "79210023-c31d-4c97-8660-5d8c998011fc" },
     ga: "G-L4X34GZB13"
   };
   window.SC_WIX = SC;
@@ -131,4 +131,16 @@
     });
   }
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", wire); else wire();
+})();
+
+/* Contact form: preselect a topic from ?topic=hardship (or any option text). */
+(function () {
+  function pick() {
+    var m = /[?&]topic=([^&]+)/.exec(location.search); if (!m) return;
+    var want = decodeURIComponent(m[1]).toLowerCase();
+    Array.prototype.forEach.call(document.querySelectorAll('select[name="focus"]'), function (sel) {
+      Array.prototype.forEach.call(sel.options, function (o) { if (o.text.toLowerCase().indexOf(want) !== -1) sel.value = o.value || o.text; });
+    });
+  }
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", pick); else pick();
 })();
