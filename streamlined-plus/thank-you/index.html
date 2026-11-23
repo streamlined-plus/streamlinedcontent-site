@@ -550,7 +550,16 @@ footer .newsletter .form-msg{margin-top:8px}
     <div style="max-width:720px">
       <span class="pill"><span class="dot" style="background:#C1FF72"></span>Order received</span>
       <h1 style="margin-top:22px">Thank you. <b>Your report is in the queue.</b></h1>
-      <p class="lede">We run reports in the 48-hour window, off-peak, with a quick human check before anything is written. Watch your inbox for a short note from a strategist asking the three questions you most want answered — reply to that and the clock starts.</p>
+      <p class="lede">One last step: tell us your website. That's all we need. The 48-hour clock starts when it arrives.</p>
+      <form class="card form-card" style="position:static;margin-top:28px" data-wix-form="blueprint" data-thanks="Got it. Your report is on its way within 48 hours.">
+        <h3>Your website</h3>
+        <p>Use the same email you checked out with, so we can match your order.</p>
+        <div class="field"><label for="o-site">Website URL</label><input id="o-site" name="website" type="url" placeholder="https://" autocomplete="url" required></div>
+        <div class="field"><label for="o-name">First name</label><input id="o-name" name="first_name" type="text" autocomplete="given-name" required></div>
+        <div class="field"><label for="o-email">Email</label><input id="o-email" name="email" type="email" autocomplete="email" required></div>
+        <input type="hidden" name="focus" value="The $99 Offer: website for my report">
+        <button class="btn btn-lime" type="submit">Send my website <span class="arrow">↗</span></button>
+      </form>
       <p class="lede" style="margin-top:14px">Questions in the meantime: <a href="/contact/index.html" data-mail="hello" data-domain="streamlinedcontent.com">Email ↗</a>.</p>
       <div class="actions"><a class="btn btn-lime" href="/insights/index.html">Read while you wait <span class="arrow">↗</span></a><a class="btn btn-ghost" href="/">Home</a></div>
     </div>
