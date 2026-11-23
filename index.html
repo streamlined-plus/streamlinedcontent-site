@@ -364,7 +364,7 @@ footer .legal .locs span:first-child::before{content:""}
 }
 
 /* receipts */
-.receipts{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.receipts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
 .receipt{background:var(--surface);border-radius:var(--r-lg);padding:30px 28px 24px;display:flex;flex-direction:column;min-height:400px;box-shadow:var(--shadow-lg);border:1px solid var(--line);position:relative}
 .receipt::before{content:"\201C";position:absolute;top:10px;right:24px;font-family:var(--serif);font-size:96px;line-height:1;color:var(--lime);opacity:.18}
 .receipt .q{font-size:19px;line-height:1.5;font-weight:500;flex:1;min-height:150px;color:var(--text)}
@@ -373,6 +373,7 @@ footer .legal .locs span:first-child::before{content:""}
 @keyframes blink{50%{opacity:0}}
 .receipt .ry{margin-top:22px;background:#0f0f0f;border-radius:16px;padding:16px 18px;font-family:var(--mono);font-size:13px;line-height:1.7;color:#d8d8c8;white-space:pre;min-height:112px;position:relative}
 .receipt .ry .k{color:var(--muted)}.receipt .ry .v{color:var(--lime)}
+.receipt .ry{padding-top:36px;white-space:pre-wrap;overflow-wrap:anywhere}
 .receipt .ry .tag{position:absolute;top:10px;right:14px;color:var(--muted);font-size:11px;letter-spacing:.1em}
 .receipts-foot{margin-top:28px;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;font-family:var(--mono);font-size:12px;color:var(--muted)}
 .list li .more{display:inline-block;margin-top:10px;font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--lime)}
@@ -505,14 +506,14 @@ footer .newsletter .form-msg{margin-top:8px}
   <div class="wrap section" id="receipts">
     <div class="section-head">
       <div><span class="label"><i></i>Receipts</span><h2>Proof, <em class="sf">not</em> <b>promises.</b></h2></div>
-      <p>Three clients, in their own words. The card under each quote is the same one the bots read — same facts, no spin.</p>
+      <p>From Fortune 100 leadership to a first-year scholarship fund, in their own words. The card under each quote is the same one the bots read: same facts, no spin.</p>
     </div>
     <div class="receipts" data-receipts>
-      <article class="receipt" data-quote="Before, our practice was invisible outside the map pack. Now new patients tell the front desk they found us in an AI answer, and the phone rings on |Mondays|." data-yaml="who: [Name]&#10;role: Practice manager&#10;solution: local-search&#10;since: 2026-03&#10;status: sample"></article>
-      <article class="receipt" data-quote="We stopped rebuilding the site every eighteen months. Pages ship in an afternoon and they still |look like us| a year later." data-yaml="who: [Name]&#10;role: Owner&#10;solution: websites&#10;since: 2025-11&#10;status: sample"></article>
-      <article class="receipt" data-quote="The automation answered the after-hours forms we used to lose. Same team, same hours, |twice the booked jobs|." data-yaml="who: [Name]&#10;role: Operations lead&#10;solution: automation&#10;since: 2026-01&#10;status: sample"></article>
+      <article class="receipt" data-quote="Jonathan |walks beside you every step of the way|, making sure you are comfortable with the content and that the message is the best it can be." data-yaml="who: Holly McCulloh&#10;role: VP, National Accounts&#10;company: Allstate Identity Protection&#10;proves: works side by side with leaders&#10;status: verified"><div class="q">Jonathan walks beside you every step of the way, making sure you are comfortable with the content and that the message is the best it can be.</div></article>
+      <article class="receipt" data-quote="He is one of those gifted people who can talk with anyone, quickly understand their level of knowledge, and |meet them where they are|." data-yaml="who: Kim J.&#10;company: Amazon&#10;proves: makes complex ideas clear&#10;status: verified"><div class="q">He is one of those gifted people who can talk with anyone, quickly understand their level of knowledge, and meet them where they are.</div></article>
+      <article class="receipt" data-quote="In our first year of operation, we were able to provide |four times as many scholarships| as we had planned, and none of that would have been possible without Streamlined Content." data-yaml="who: Scott M.&#10;role: Philanthropist&#10;result: 4x scholarships, year one&#10;status: verified"><div class="q">In our first year of operation, we were able to provide four times as many scholarships as we had planned, and none of that would have been possible without Streamlined Content.</div></article>
     </div>
-    <div class="receipts-foot"><span>receipts: 3 · verified: on request · sample copy until client quotes are approved</span><a class="btn btn-lime" href="/growth-blueprint/index.html">Add yours <span class="arrow">↗</span></a></div>
+    <div class="receipts-foot"><span>receipts: 3 · verified: on request</span><a class="btn btn-lime" href="/growth-blueprint/index.html">Add yours <span class="arrow">↗</span></a></div>
   </div>
 
   <div class="wrap section" id="industries">
@@ -565,7 +566,7 @@ footer .newsletter .form-msg{margin-top:8px}
   function sl(ms){return new Promise(function(r){setTimeout(r,ms)})}
   async function typeQ(el,text){var parts=text.split('|'),out='';for(var i=0;i<parts.length;i++){var lime=i%2===1;for(var ch of parts[i]){out+=lime?'<b>'+esc(ch)+'</b>':esc(ch);el.innerHTML=out+'<span class="cur"></span>';await sl(ch===' '?18:(/[.,]/.test(ch)?120:24))}}el.innerHTML=out}
   async function typeY(el,text){var out='<span class="tag">for bots + people</span>';var lines=text.split('\n');for(var line of lines){var k=line.split(':')[0],v=line.slice(k.length+1).trim();out+='<span class="k">'+esc(k)+':</span> ';var t='';for(var ch of v){t+=esc(ch);el.innerHTML=out+'<span class="v">'+t+'</span><span class="cur"></span>';await sl(20)}out+='<span class="v">'+t+'</span>\n';await sl(70)}el.innerHTML=out}
-  async function run(row){if(row.dataset.done)return;row.dataset.done=1;for(var c of row.querySelectorAll('.receipt')){c.innerHTML='<div class="q"></div><div class="ry"></div>';await typeQ(c.querySelector('.q'),c.dataset.quote);await sl(150);await typeY(c.querySelector('.ry'),c.dataset.yaml);await sl(250)}}
+  async function run(row){if(row.dataset.done)return;row.dataset.done=1;row.querySelectorAll('.receipt').forEach(function(c){c.innerHTML='<div class="q"></div><div class="ry"></div>'});for(var c of row.querySelectorAll('.receipt')){await typeQ(c.querySelector('.q'),c.dataset.quote);await sl(150);await typeY(c.querySelector('.ry'),c.dataset.yaml);await sl(250)}}
   if(!('IntersectionObserver' in window)){rows.forEach(run);return}
   var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)run(e.target)})},{threshold:.2});rows.forEach(function(r){io.observe(r)});
 })();
