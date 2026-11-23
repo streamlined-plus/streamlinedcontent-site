@@ -4,9 +4,8 @@ This branch (`live`) matches www.streamlinedcontent.com exactly (synced 2026-11-
 Start every website change from here, not from `main` (main contains an old revert to the v1 site) and not from a stale copy.
 
 - Plain static HTML, one `index.html` per page folder, no build step.
-- Hosted by Wix (headless static hosting). `sc-wix.js` connects forms, newsletter, Streamlined+ checkout and analytics: don't rename the ids, classes or data attributes it uses.
-- Publishing replaces the whole site with this folder. Jon publishes himself. Never run `wix release` without Jon's go-ahead.
-- Publish (Jon runs it): `npx @wix/cli@latest release -t minor -c "<what changed>"` from this folder. Needs Node 24.22.1+.
-- Before publishing: back up the live site, compare file by file, and make sure no notes/tool files (like this one) are in the upload folder. Use a clean copy of only the site files.
+- HOSTED ON GITHUB PAGES since 2026-11-23 (repo streamlined-plus/streamlinedcontent-site, branch `live`, HTTPS enforced; domain records in Wix point apex A to 185.199.108-111.153 and www CNAME to streamlined-plus.github.io). Wix still runs forms, newsletter, Streamlined+ checkout through its APIs. `sc-wix.js` connects forms, newsletter, Streamlined+ checkout and analytics: don't rename the ids, classes or data attributes it uses.
+- Publishing = commit and `git push origin live` (GitHub rebuilds in about a minute). Only with Jon's go-ahead. `wix release` is no longer used.
+- Note: files in this branch are public (this CLAUDE.md too). Keep private notes elsewhere.
 - Testimonials: the tagged library lives in ~/AI/career/testimonials/testimonials-library.md.
 - Paper Signal light theme: separate work on the `paper-signal-redesign` branch (not live).
