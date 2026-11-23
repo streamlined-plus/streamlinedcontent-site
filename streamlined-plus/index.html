@@ -488,6 +488,17 @@ footer .newsletter .form-msg{margin-top:8px}
 .pwyc-label{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--lime)}
 .pwyc-note{margin-top:14px;color:var(--muted);font-size:15px}
 .pwyc-note a{color:var(--lime);text-decoration:underline;text-underline-offset:3px}
+
+/* nav-1240: six-item menu collapses earlier */
+.nav a{white-space:nowrap}
+.nav{gap:26px}
+@media (max-width:1240px){
+  .nav{display:none}
+  .nav.open{display:flex;position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;background:var(--ink-2);border-bottom:1px solid var(--line);padding:10px var(--gutter) 18px}
+  .nav.open a{padding:14px 0;border-bottom:1px solid var(--line)}
+  .nav.open a::after{display:none}
+  .nav-toggle{display:grid}
+}
 </style>
 </head>
 <body>
@@ -508,9 +519,11 @@ footer .newsletter .form-msg{margin-top:8px}
   <div class="wrap">
     <a class="brand" href="/index.html" aria-label="Streamlined Content home"><img src="/images/logo.png" alt="streamlined content" width="423" height="134"></a>
     <nav class="nav" id="nav" aria-label="Primary">
+      <a href="/solutions/local-search/index.html" data-nav="aeo">AEO &amp; AI SEO</a>
+      <a href="/solutions/content-systems/index.html" data-nav="ai-consulting">AI Consulting</a>
       <a href="/solutions/index.html" data-nav="solutions">Solutions</a>
-      <a href="/insights/index.html" data-nav="insights">Our thinking</a>
-      <a href="/index.html#process" data-nav="process">Our process</a>
+      <a href="/insights/index.html" data-nav="insights">Insights</a>
+      <a href="/about/index.html" data-nav="about">About</a>
       <a href="/bots/index.html" data-nav="bots">For bots</a>
     </nav>
     <a class="btn btn-lime header-cta" href="/contact/index.html">Request a consultation <span class="arrow">↗</span></a>
@@ -552,7 +565,7 @@ footer .newsletter .form-msg{margin-top:8px}
       <p>Advanced AI services can cost more than $200 a month, and that's just for one account. We help business owners save a fortune on these services in four critical ways.</p>
     </div>
     <div class="saves">
-      <div class="save"><span class="num">01 · Off-hour pricing</span><h3>Reports run in the 48-hour window, during off-peak hours.</h3><p>Our 48-hour window allows us to schedule reporting during off-peak hours, saving even more money we can pass along to our clients. It also leaves time for a quick human check before any content is drafted.</p></div>
+      <div class="save"><span class="num">01 · Off-hour pricing</span><h3>Reports run in the 48-hour window, during off-peak hours.</h3><p>The 48-hour window allows us to schedule reporting during off-peak hours, saving even more money we can pass along to our clients. It also leaves time for a quick human check before any content is drafted.</p></div>
       <div class="save"><span class="num">02 · Fractional subscription prices</span><h3>You pay for the fraction of the features you actually need.</h3><p>Advanced AI services can cost more than $200 a month, and that's just for one account. Meanwhile, most organizations only need a fraction of the features. That means you don't pay for seats, tiers and tools you'll never open — you pay for one report.</p></div>
       <div class="save"><span class="num">03 · Bulk token purchases</span><h3>We buy at volume, so you don't.</h3><p>We purchase a tremendous amount of tokens to fund our independent research efforts. At times, this means we're paying just a fraction of what others pay for the same work.</p></div>
       <div class="save"><span class="num">04 · Hybrid model utilization</span><h3>Local models for the routine work, cloud models for the reasoning, a person for the final check.</h3><p>We further lower costs by handing off certain low-thinking tasks to fully localized models, which are checked for accuracy by agentic cloud models, with a quick human look before anything is sent.</p>
@@ -606,9 +619,9 @@ footer .newsletter .form-msg{margin-top:8px}
       <div><input id="nl-email" name="email" type="email" autocomplete="email" placeholder="you@company.com" required><button class="btn btn-lime" type="submit">Subscribe</button></div>
     </form>
     <nav class="footnav" aria-label="Footer">
-      <div><h4>Solutions</h4><a href="/solutions/websites/index.html">Conversion websites</a><a href="/solutions/local-search/index.html">Local search + AI</a><a href="/solutions/content-systems/index.html">Content marketing &amp; AI</a><a href="/solutions/lead-automation/index.html">Marketing automation</a><a href="/solutions/index.html">All solutions</a></div>
+      <div><h4>Solutions</h4><a href="/solutions/websites/index.html">Conversion websites</a><a href="/solutions/local-search/index.html">AEO &amp; AI SEO</a><a href="/solutions/content-systems/index.html">AI consulting &amp; content</a><a href="/solutions/lead-automation/index.html">Marketing automation</a><a href="/solutions/index.html">All solutions</a></div>
       <div><h4>Industries</h4><a href="/industries/professional-services/index.html">Professional services</a><a href="/industries/home-trade-field-services/index.html">Home, trade &amp; field</a><a href="/industries/health-wellness/index.html">Health &amp; wellness</a><a href="/industries/saas-technology/index.html">SaaS &amp; technology</a><a href="/industries/financial-insurance-services/index.html">Financial &amp; insurance</a></div>
-      <div><h4>Company</h4><a href="/about/index.html">About J.E. Lambert</a><a href="/insights/index.html">Our thinking</a><a href="/index.html#process">Our process</a><a href="/bots/index.html">For bots</a><a href="/contact/index.html">Contact us</a></div>
+      <div><h4>Company</h4><a href="/about/index.html">About J.E. Lambert</a><a href="/insights/index.html">Insights</a><a href="/about/index.html#process">Process</a><a href="/bots/index.html">For bots</a><a href="/contact/index.html">Contact us</a></div>
       <div><h4>Get started</h4><a href="/contact/index.html">Request a consultation</a><a href="/streamlined-plus/index.html">The $99 Offer</a><a href="/contact/index.html" data-mail="hello" data-domain="streamlinedcontent.com">Email ↗</a><a href="https://www.linkedin.com/in/streamlined-content/" rel="me noopener" target="_blank">LinkedIn ↗</a></div>
     </nav>
     <div class="legal"><span>© 2026 Streamlined Content. Founded by <a href="/about/index.html">J.E. Lambert</a>.<br>All rights reserved.</span><span class="locs"><span>Headquarters: Georgetown, SC</span><span>Remote services: Nationwide</span></span></div>

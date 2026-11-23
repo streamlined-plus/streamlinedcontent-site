@@ -394,6 +394,17 @@ footer .newsletter div{display:flex;gap:8px}
 footer .newsletter input{flex:1;min-width:0;padding:12px 14px;border-radius:12px;border:1px solid var(--line-strong);background:var(--ink-2);color:#fff;font:inherit}
 footer .newsletter .btn{padding:12px 18px}
 footer .newsletter .form-msg{margin-top:8px}
+
+/* nav-1240: six-item menu collapses earlier */
+.nav a{white-space:nowrap}
+.nav{gap:26px}
+@media (max-width:1240px){
+  .nav{display:none}
+  .nav.open{display:flex;position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;background:var(--ink-2);border-bottom:1px solid var(--line);padding:10px var(--gutter) 18px}
+  .nav.open a{padding:14px 0;border-bottom:1px solid var(--line)}
+  .nav.open a::after{display:none}
+  .nav-toggle{display:grid}
+}
 </style>
 </head>
 <body>
@@ -414,9 +425,11 @@ footer .newsletter .form-msg{margin-top:8px}
   <div class="wrap">
     <a class="brand" href="/index.html" aria-label="Streamlined Content home"><img src="/images/logo.png" alt="streamlined content" width="423" height="134"></a>
     <nav class="nav" id="nav" aria-label="Primary">
+      <a href="/solutions/local-search/index.html" data-nav="aeo">AEO &amp; AI SEO</a>
+      <a href="/solutions/content-systems/index.html" data-nav="ai-consulting">AI Consulting</a>
       <a href="/solutions/index.html" data-nav="solutions">Solutions</a>
-      <a href="/insights/index.html" data-nav="insights">Our thinking</a>
-      <a href="/index.html#process" data-nav="process">Our process</a>
+      <a href="/insights/index.html" data-nav="insights">Insights</a>
+      <a href="/about/index.html" data-nav="about">About</a>
       <a href="/bots/index.html" data-nav="bots">For bots</a>
     </nav>
     <a class="btn btn-lime header-cta" href="/contact/index.html">Request a consultation <span class="arrow">↗</span></a>
@@ -482,9 +495,9 @@ footer .newsletter .form-msg{margin-top:8px}
       <div><input id="nl-email" name="email" type="email" autocomplete="email" placeholder="you@company.com" required><button class="btn btn-lime" type="submit">Subscribe</button></div>
     </form>
     <nav class="footnav" aria-label="Footer">
-      <div><h4>Solutions</h4><a href="/solutions/websites/index.html">Conversion websites</a><a href="/solutions/local-search/index.html">Local search + AI</a><a href="/solutions/content-systems/index.html">Content marketing &amp; AI</a><a href="/solutions/lead-automation/index.html">Marketing automation</a><a href="/solutions/index.html">All solutions</a></div>
+      <div><h4>Solutions</h4><a href="/solutions/websites/index.html">Conversion websites</a><a href="/solutions/local-search/index.html">AEO &amp; AI SEO</a><a href="/solutions/content-systems/index.html">AI consulting &amp; content</a><a href="/solutions/lead-automation/index.html">Marketing automation</a><a href="/solutions/index.html">All solutions</a></div>
       <div><h4>Industries</h4><a href="/industries/professional-services/index.html">Professional services</a><a href="/industries/home-trade-field-services/index.html">Home, trade &amp; field</a><a href="/industries/health-wellness/index.html">Health &amp; wellness</a><a href="/industries/saas-technology/index.html">SaaS &amp; technology</a><a href="/industries/financial-insurance-services/index.html">Financial &amp; insurance</a></div>
-      <div><h4>Company</h4><a href="/about/index.html">About J.E. Lambert</a><a href="/insights/index.html">Our thinking</a><a href="/index.html#process">Our process</a><a href="/bots/index.html">For bots</a><a href="/contact/index.html">Contact us</a></div>
+      <div><h4>Company</h4><a href="/about/index.html">About J.E. Lambert</a><a href="/insights/index.html">Insights</a><a href="/about/index.html#process">Process</a><a href="/bots/index.html">For bots</a><a href="/contact/index.html">Contact us</a></div>
       <div><h4>Get started</h4><a href="/contact/index.html">Request a consultation</a><a href="/streamlined-plus/index.html">The $99 Offer</a><a href="/contact/index.html" data-mail="hello" data-domain="streamlinedcontent.com">Email ↗</a><a href="https://www.linkedin.com/in/streamlined-content/" rel="me noopener" target="_blank">LinkedIn ↗</a></div>
     </nav>
     <div class="legal"><span>© 2026 Streamlined Content. Founded by <a href="/about/index.html">J.E. Lambert</a>.<br>All rights reserved.</span><span class="locs"><span>Headquarters: Georgetown, SC</span><span>Remote services: Nationwide</span></span></div>

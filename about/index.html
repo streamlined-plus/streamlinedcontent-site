@@ -407,6 +407,23 @@ footer .newsletter .form-msg{margin-top:8px}
 .testi .results div{display:flex;justify-content:space-between;align-items:baseline;padding:14px 16px;border-radius:14px;background:var(--ink-2);border:1px solid var(--line)}
 .testi .results b{font-family:var(--display);font-size:26px;color:var(--lime);letter-spacing:-.02em}
 .testi .results span{font-size:13px;color:var(--muted)}
+.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.stats div{padding:20px 20px 18px;border-radius:var(--r-lg);background:var(--surface);border:1px solid var(--line)}
+.stats b{display:block;font-family:var(--display);font-size:clamp(28px,3.2vw,40px);color:var(--lime);letter-spacing:-.02em;line-height:1.05;margin-bottom:8px}
+.stats span{font-size:14px;color:var(--muted);line-height:1.45}
+@media (max-width:900px){.stats{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:520px){.stats{grid-template-columns:1fr}}
+
+/* nav-1240: six-item menu collapses earlier */
+.nav a{white-space:nowrap}
+.nav{gap:26px}
+@media (max-width:1240px){
+  .nav{display:none}
+  .nav.open{display:flex;position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;background:var(--ink-2);border-bottom:1px solid var(--line);padding:10px var(--gutter) 18px}
+  .nav.open a{padding:14px 0;border-bottom:1px solid var(--line)}
+  .nav.open a::after{display:none}
+  .nav-toggle{display:grid}
+}
 </style>
 </head>
 <body>
@@ -427,9 +444,11 @@ footer .newsletter .form-msg{margin-top:8px}
   <div class="wrap">
     <a class="brand" href="/index.html" aria-label="Streamlined Content home"><img src="/images/logo.png" alt="streamlined content" width="423" height="134"></a>
     <nav class="nav" id="nav" aria-label="Primary">
+      <a href="/solutions/local-search/index.html" data-nav="aeo">AEO &amp; AI SEO</a>
+      <a href="/solutions/content-systems/index.html" data-nav="ai-consulting">AI Consulting</a>
       <a href="/solutions/index.html" data-nav="solutions">Solutions</a>
-      <a href="/insights/index.html" data-nav="insights">Our thinking</a>
-      <a href="/index.html#process" data-nav="process">Our process</a>
+      <a href="/insights/index.html" data-nav="insights">Insights</a>
+      <a href="/about/index.html" data-nav="about" class="active">About</a>
       <a href="/bots/index.html" data-nav="bots">For bots</a>
     </nav>
     <a class="btn btn-lime header-cta" href="/contact/index.html">Request a consultation <span class="arrow">↗</span></a>
@@ -463,9 +482,40 @@ footer .newsletter .form-msg{margin-top:8px}
     <p style="margin-top:28px;color:var(--muted)">The one exception is <a href="/streamlined-plus/index.html">Streamlined+</a>: a near-autonomous $99 report that AI builds and I check before it's sent. That's how it stays affordable.</p>
   </div></div>
 
+  <div class="wrap section" id="process">
+    <div class="split">
+      <div class="frame"><img src="/images/leaves.webp" alt="A young researcher examining leaves and taking notes inside a biodiversity dome" width="1600" height="1067"></div>
+      <div>
+        <span class="label"><i></i>Process · Humans in the loop</span>
+        <h2 style="margin-top:18px">AI expands what's possible. <b>Experienced people decide what matters.</b></h2>
+        <p class="lede">Nothing is published and nothing is reported without passing through a named strategist who knows your business. The machines do the sweeping; a person does the choosing.</p>
+        <div class="pillars">
+          <div><span>Map</span><div><strong>Map the opportunity</strong><p>We assess where you stand across search, maps, and AI answers and find the highest-value next move.</p></div></div>
+          <div><span>Build</span><div><strong>Strengthen the foundation</strong><p>Business details, content, and structure aligned for clarity — for people and for crawlers.</p></div></div>
+          <div><span>Grow</span><div><strong>Publish + improve</strong><p>We launch, monitor, and refine based on what people are actually searching for and asking.</p></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="wrap section">
     <div class="testi" style="grid-template-columns:1fr">
-      <div><blockquote>Jonathan walks beside you every step of the way, making sure you are comfortable with the content and that the message is the best it can be.</blockquote><div class="who"><i>HM</i><div><strong>Holly McCulloh</strong><span>Vice President of National Accounts · Allstate Identity Protection</span></div></div></div>
+      <div><blockquote>Jonathan walks beside you every step of the way, making sure you are comfortable with the content and that the message is the best it can be.</blockquote><div class="who"><i>HM</i><div><strong>Holly M.</strong><span>Vice President of National Accounts · Allstate Identity Protection</span></div></div></div>
+    </div>
+  </div>
+
+  <div class="wrap section" id="track-record">
+    <div class="section-head">
+      <div><span class="label"><i></i>Track record</span><h2>Receipts, <b>with the team's names on them.</b></h2></div>
+      <p>Results I helped deliver alongside great people and good systems. Numbers are stated conservatively.</p>
+    </div>
+    <div class="stats">
+      <div><b>1,100+</b><span>partner sites launched from one reusable content library</span></div>
+      <div><b>~95%</b><span>of revenue came through the broker channel whose advisory board I served on</span></div>
+      <div><b>2K → 4M+</b><span>monthly readers across a news network, in 15 months</span></div>
+      <div><b>5–10x</b><span>typical return on client investment at Streamlined Content</span></div>
+      <div><b>~$60M</b><span>contract an industry ebook helped open the door to (their sales team closed it)</span></div>
+      <div><b>2x</b><span>Net Promoter Score for an enterprise software partner</span></div>
     </div>
   </div>
 
@@ -499,9 +549,9 @@ footer .newsletter .form-msg{margin-top:8px}
       <div><input id="nl-email" name="email" type="email" autocomplete="email" placeholder="you@company.com" required><button class="btn btn-lime" type="submit">Subscribe</button></div>
     </form>
     <nav class="footnav" aria-label="Footer">
-      <div><h4>Solutions</h4><a href="/solutions/websites/index.html">Conversion websites</a><a href="/solutions/local-search/index.html">Local search + AI</a><a href="/solutions/content-systems/index.html">Content marketing &amp; AI</a><a href="/solutions/lead-automation/index.html">Marketing automation</a><a href="/solutions/index.html">All solutions</a></div>
+      <div><h4>Solutions</h4><a href="/solutions/websites/index.html">Conversion websites</a><a href="/solutions/local-search/index.html">AEO &amp; AI SEO</a><a href="/solutions/content-systems/index.html">AI consulting &amp; content</a><a href="/solutions/lead-automation/index.html">Marketing automation</a><a href="/solutions/index.html">All solutions</a></div>
       <div><h4>Industries</h4><a href="/industries/professional-services/index.html">Professional services</a><a href="/industries/home-trade-field-services/index.html">Home, trade &amp; field</a><a href="/industries/health-wellness/index.html">Health &amp; wellness</a><a href="/industries/saas-technology/index.html">SaaS &amp; technology</a><a href="/industries/financial-insurance-services/index.html">Financial &amp; insurance</a></div>
-      <div><h4>Company</h4><a href="/about/index.html">About J.E. Lambert</a><a href="/insights/index.html">Our thinking</a><a href="/index.html#process">Our process</a><a href="/bots/index.html">For bots</a><a href="/contact/index.html">Contact us</a></div>
+      <div><h4>Company</h4><a href="/about/index.html">About J.E. Lambert</a><a href="/insights/index.html">Insights</a><a href="/about/index.html#process">Process</a><a href="/bots/index.html">For bots</a><a href="/contact/index.html">Contact us</a></div>
       <div><h4>Get started</h4><a href="/contact/index.html">Request a consultation</a><a href="/streamlined-plus/index.html">The $99 Offer</a><a href="/contact/index.html" data-mail="hello" data-domain="streamlinedcontent.com">Email ↗</a><a href="https://www.linkedin.com/in/streamlined-content/" rel="me noopener" target="_blank">LinkedIn ↗</a></div>
     </nav>
     <div class="legal"><span>© 2026 Streamlined Content. Founded by <a href="/about/index.html">J.E. Lambert</a>.<br>All rights reserved.</span><span class="locs"><span>Headquarters: Georgetown, SC</span><span>Remote services: Nationwide</span></span></div>

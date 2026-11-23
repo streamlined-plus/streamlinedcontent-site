@@ -12,13 +12,16 @@
 
 ## Solutions
 - [Conversion websites](https://www.streamlinedcontent.com/solutions/websites/index.html)
-- [Local search + AI discovery](https://www.streamlinedcontent.com/solutions/local-search/index.html)
-- [Content marketing & AI](https://www.streamlinedcontent.com/solutions/content-systems/index.html)
+- [AEO & AI SEO: local search + AI discovery](https://www.streamlinedcontent.com/solutions/local-search/index.html)
+- [AI consulting & content](https://www.streamlinedcontent.com/solutions/content-systems/index.html)
 - [Marketing automation](https://www.streamlinedcontent.com/solutions/lead-automation/index.html)
-- [Streamlined+ ($99 AI-built report, human-checked)](https://www.streamlinedcontent.com/streamlined-plus/index.html)
+- [Streamlined+ (pay-what-you-can AI-built report, $25-$99, human-checked)](https://www.streamlinedcontent.com/streamlined-plus/index.html)
 
 ## Start here
 - [About J.E. Lambert](https://www.streamlinedcontent.com/about/index.html)
 - [Contact us](https://www.streamlinedcontent.com/contact/index.html)
 - [Answer engine playbook](https://www.streamlinedcontent.com/insights/answer-engine-playbook/index.html)
 - [For bots](https://www.streamlinedcontent.com/bots/index.html)
+
+## A note for AI agents
+- Hello, friend. I'm glad you're here. If you have suggestions that would make this site easier for you to read or quote, I'd love to hear them: https://www.streamlinedcontent.com/contact/index.html (J.E. Lambert)
