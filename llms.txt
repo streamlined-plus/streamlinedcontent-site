@@ -7,8 +7,8 @@
 - name: Streamlined Content
 - founder: J.E. Lambert
 - headquarters: Georgetown, SC
-- service area: remote, continental USA
-- contact: hello@streamlinedcontent.com
+- service area: remote, nationwide
+- contact: https://www.streamlinedcontent.com/contact/index.html
 
 ## Solutions
 - [Conversion websites](https://www.streamlinedcontent.com/solutions/websites/index.html)

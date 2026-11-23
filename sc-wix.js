@@ -81,7 +81,7 @@
         form.dispatchEvent(new CustomEvent("sc:submitted", { bubbles: true }));
       }).catch(function (err) {
         var v = violations(err);
-        note(form, v.length ? "Please check: " + v.map(function (e) { return e.errorPath.replace(/_/g, " "); }).join(", ") : "That didn't go through. Email hello@streamlinedcontent.com and we'll sort it.", "err");
+        note(form, v.length ? "Please check: " + v.map(function (e) { return e.errorPath.replace(/_/g, " "); }).join(", ") : "That didn't go through. Email hello" + "@" + "streamlinedcontent.com and we'll sort it.", "err");
       }).then(function () { if (btn) { btn.disabled = false; btn.textContent = btn.getAttribute("data-label"); } });
     });
   }
@@ -102,7 +102,7 @@
       var label = a.innerHTML; a.innerHTML = "Opening secure checkout…"; a.style.pointerEvents = "none";
       SC.checkout(planId, { thankYouPageUrl: location.origin + "/streamlined-plus/thank-you/index.html", postFlowUrl: location.origin + "/streamlined-plus/index.html" })
         .then(function (u) { location.href = u; })
-        .catch(function () { a.innerHTML = label; a.style.pointerEvents = ""; alert("Checkout isn't available right now. Email hello@streamlinedcontent.com and we'll invoice you directly."); });
+        .catch(function () { a.innerHTML = label; a.style.pointerEvents = ""; alert("Checkout isn't available right now. Email hello" + "@" + "streamlinedcontent.com and we'll invoice you directly."); });
     });
   }
 
@@ -121,4 +121,14 @@
     ga();
   }
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init); else init();
+})();
+
+/* Email links: built in the browser so the address never sits in the page for spam bots. */
+(function () {
+  function wire() {
+    Array.prototype.forEach.call(document.querySelectorAll("a[data-mail][data-domain]"), function (a) {
+      a.href = "mai" + "lto:" + a.getAttribute("data-mail") + "@" + a.getAttribute("data-domain");
+    });
+  }
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", wire); else wire();
 })();
