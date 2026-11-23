@@ -20,9 +20,7 @@
 <script src="/sc-wix.js" defer></script>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Instrument+Serif:ital@1&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
-<script type="application/ld+json">
-{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://www.streamlinedcontent.com/#org", "name": "Streamlined Content", "url": "https://www.streamlinedcontent.com/", "logo": "https://www.streamlinedcontent.com/images/logo-500.png", "slogan": "Human in the loop. Expert at the helm.", "description": "Digital marketing and answer-engine (GEO/AEO) consulting for small and mid-sized businesses. Websites, local search + AI discovery, AI content systems, and follow-up automation, run by a human expert.", "areaServed": "United States", "address": {"@type": "PostalAddress", "addressLocality": "Georgetown", "addressRegion": "SC", "addressCountry": "US"}, "founder": {"@type": "Person", "name": "J.E. Lambert"}, "knowsAbout": ["Answer engine optimization", "Generative engine optimization", "Local SEO", "Conversion websites", "Marketing automation", "Human-in-the-loop AI"], "contactPoint": {"@type": "ContactPoint", "contactType": "sales", "email": "hello@streamlinedcontent.com"}}, {"@type": "WebSite", "@id": "https://www.streamlinedcontent.com/#site", "url": "https://www.streamlinedcontent.com/", "name": "Streamlined Content", "publisher": {"@id": "https://www.streamlinedcontent.com/#org"}}, {"@type": "WebPage", "@id": "https://www.streamlinedcontent.com/solutions/local-search/index.html#page", "url": "https://www.streamlinedcontent.com/solutions/local-search/index.html", "name": "Local Search + AI Discovery | Streamlined Content", "description": "A clear, credible presence across search, maps and AI answers for local and service-area businesses: visibility audit, service + location pages, structured search foundations.", "isPartOf": {"@id": "https://www.streamlinedcontent.com/#site"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.streamlinedcontent.com/"}, {"@type": "ListItem", "position": 2, "name": "Solutions", "item": "https://www.streamlinedcontent.com/solutions/index.html"}, {"@type": "ListItem", "position": 3, "name": "Local Search + AI", "item": "https://www.streamlinedcontent.com/solutions/local-search/index.html"}]}, {"@type": "Service", "name": "Local Search + AI Discovery", "serviceType": "Local SEO and answer engine optimization", "provider": {"@id": "https://www.streamlinedcontent.com/#org"}, "url": "https://www.streamlinedcontent.com/solutions/local-search/index.html", "areaServed": "United States", "audience": {"@type": "Audience", "audienceType": "Local and service-area businesses"}}]}
-</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://www.streamlinedcontent.com/#org", "name": "Streamlined Content", "url": "https://www.streamlinedcontent.com/", "logo": "https://www.streamlinedcontent.com/images/logo-500.png", "slogan": "Human in the loop. Expert at the helm.", "description": "Digital marketing and answer-engine (GEO/AEO) consulting for small and mid-sized businesses. Websites, local search + AI discovery, AI content systems, and follow-up automation, run by a human expert.", "areaServed": "United States", "address": {"@type": "PostalAddress", "addressLocality": "Georgetown", "addressRegion": "SC", "addressCountry": "US"}, "founder": {"@type": "Person", "name": "J.E. Lambert"}, "knowsAbout": ["Answer engine optimization", "Generative engine optimization", "Local SEO", "Conversion websites", "Marketing automation", "Human-in-the-loop AI"], "contactPoint": {"@type": "ContactPoint", "contactType": "sales", "email": "hello@streamlinedcontent.com"}, "sameAs": ["https://www.linkedin.com/in/streamlined-content/"]}, {"@type": "WebSite", "@id": "https://www.streamlinedcontent.com/#site", "url": "https://www.streamlinedcontent.com/", "name": "Streamlined Content", "publisher": {"@id": "https://www.streamlinedcontent.com/#org"}}, {"@type": "WebPage", "@id": "https://www.streamlinedcontent.com/solutions/local-search/index.html#page", "url": "https://www.streamlinedcontent.com/solutions/local-search/index.html", "name": "Local Search + AI Discovery | Streamlined Content", "description": "A clear, credible presence across search, maps and AI answers for local and service-area businesses: visibility audit, service + location pages, structured search foundations.", "isPartOf": {"@id": "https://www.streamlinedcontent.com/#site"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.streamlinedcontent.com/"}, {"@type": "ListItem", "position": 2, "name": "Solutions", "item": "https://www.streamlinedcontent.com/solutions/index.html"}, {"@type": "ListItem", "position": 3, "name": "Local Search + AI", "item": "https://www.streamlinedcontent.com/solutions/local-search/index.html"}]}, {"@type": "Service", "name": "Local Search + AI Discovery", "serviceType": "Local SEO and answer engine optimization", "provider": {"@id": "https://www.streamlinedcontent.com/#org"}, "url": "https://www.streamlinedcontent.com/solutions/local-search/index.html", "areaServed": "United States", "audience": {"@type": "Audience", "audienceType": "Local and service-area businesses"}}]}</script>
 <style>
 :root{
   --ink:#171717; --ink-2:#1E1E1E; --surface:#222222; --surface-2:#2A2A2A;
@@ -239,6 +237,11 @@ footer .brand img{height:42px}
 footer .tag-line{font-family:var(--serif);font-style:italic;font-size:19px;color:var(--muted)}
 footer nav{display:flex;gap:26px;justify-content:flex-end;font-size:14px;color:var(--muted);flex-wrap:wrap}
 footer nav a:hover{color:var(--text)}
+footer nav.footnav{grid-column:1/-1;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:28px;justify-content:stretch;padding-top:8px}
+footer nav.footnav div{display:flex;flex-direction:column;gap:10px;min-width:0}
+footer nav.footnav h4{margin:0 0 4px;font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--lime);font-weight:500}
+footer nav.footnav a{overflow-wrap:anywhere}
+@media (max-width:760px){footer nav.footnav{grid-template-columns:repeat(2,minmax(0,1fr))}}
 footer .legal{grid-column:1/-1;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:13px;color:var(--faint);padding-top:26px;border-top:1px solid var(--line)}
 footer .legal .locs span::before{content:"· ";color:var(--lime)}
 footer .legal .locs span:first-child::before{content:""}
@@ -415,7 +418,7 @@ footer .newsletter .form-msg{margin-top:8px}
       <a href="/index.html#process" data-nav="process">Our process</a>
       <a href="/bots/index.html" data-nav="bots">For bots</a>
     </nav>
-    <a class="btn btn-lime header-cta" href="/growth-blueprint/index.html">Let's talk <span class="arrow">↗</span></a>
+    <a class="btn btn-lime header-cta" href="/contact/index.html">Request a consultation <span class="arrow">↗</span></a>
     <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="nav" aria-label="Menu"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
   </div>
 </header>
@@ -430,7 +433,7 @@ footer .newsletter .form-msg{margin-top:8px}
         <div style="display:flex;gap:10px;flex-wrap:wrap"><span class="pill"><span class="dot" style="background:var(--dot-blue)"></span>Local SEO</span><span class="pill"><span class="dot" style="background:var(--dot-pink)"></span>AI discovery</span></div>
         <h1 style="margin-top:26px">Be found.<br>Be understood.<br>Be the <em class="sf">clear</em> choice. <b>Wherever people ask.</b></h1>
         <p class="lede">A clear, credible presence across search, maps, and AI answers.</p>
-        <div class="actions"><a class="btn btn-lime" href="/growth-blueprint/index.html">Get a visibility audit <span class="arrow">↗</span></a></div>
+        <div class="actions"><a class="btn btn-lime" href="/contact/index.html">Request a consultation <span class="arrow">↗</span></a></div>
       </div>
       <div class="frame" style="aspect-ratio:1/1;background:var(--surface);display:grid;place-items:center;padding:12%">
         <svg viewBox="13.5 2 370 370" style="width:100%;height:auto;filter:drop-shadow(0 30px 40px rgba(0,0,0,.5))" aria-hidden="true"><g fill="#2C2C2C"><path d="M175.45 16.05c-26.8 1.01-47.61 11.89-60.79 34.71-14.48 25.02-13.61 50.53 2.35 74.69 13.62 20.62 33.61 30.25 58.54 30.83V16.05h-.1Z"/><path d="M198.03 174.21v183.37h.1c35.76-1.29 63.47-15.53 81.06-45.4 19.27-32.69 18.17-66.11-3.11-97.65-18.18-26.94-44.83-39.55-78.05-40.32Z"/></g><path fill="#C1FF72" d="M197.12 86.34v68.31h.05c14.04-.48 24.92-5.8 31.83-16.92 7.57-12.18 7.14-24.64-1.25-36.39-7.14-10.02-17.59-14.71-30.63-15Z"/></svg>
@@ -495,7 +498,7 @@ footer .newsletter .form-msg{margin-top:8px}
   <div class="wrap section tight">
     <div class="cta">
       <div><h2>Find your visibility gaps.</h2><p>Get a tailored look at where you stand — and what to do next.</p></div>
-      <a class="btn btn-lime" href="/growth-blueprint/index.html">Get a visibility audit <span class="arrow">↗</span></a>
+      <a class="btn btn-lime" href="/contact/index.html">Request a consultation <span class="arrow">↗</span></a>
     </div>
   </div>
 
@@ -508,7 +511,12 @@ footer .newsletter .form-msg{margin-top:8px}
       <label for="nl-email">The occasional long read. No slop.</label>
       <div><input id="nl-email" name="email" type="email" autocomplete="email" placeholder="you@company.com" required><button class="btn btn-lime" type="submit">Subscribe</button></div>
     </form>
-    <nav aria-label="Footer"><a href="/about/index.html">About</a><a href="/solutions/index.html">Solutions</a><a href="/insights/index.html">Our thinking</a><a href="/index.html#process">Our process</a><a href="/index.html#industries">Industries</a><a href="/streamlined-plus/index.html">Streamlined+</a><a href="/bots/index.html">For bots</a><a href="/growth-blueprint/index.html">Let's talk</a></nav>
+    <nav class="footnav" aria-label="Footer">
+      <div><h4>Solutions</h4><a href="/solutions/websites/index.html">Conversion websites</a><a href="/solutions/local-search/index.html">Local search + AI</a><a href="/solutions/content-systems/index.html">Content marketing &amp; AI</a><a href="/solutions/lead-automation/index.html">Marketing automation</a><a href="/solutions/index.html">All solutions</a></div>
+      <div><h4>Industries</h4><a href="/industries/professional-services/index.html">Professional services</a><a href="/industries/home-trade-field-services/index.html">Home, trade &amp; field</a><a href="/industries/health-wellness/index.html">Health &amp; wellness</a><a href="/industries/saas-technology/index.html">SaaS &amp; technology</a><a href="/industries/financial-insurance-services/index.html">Financial &amp; insurance</a></div>
+      <div><h4>Company</h4><a href="/about/index.html">About J.E. Lambert</a><a href="/insights/index.html">Our thinking</a><a href="/index.html#process">Our process</a><a href="/bots/index.html">For bots</a><a href="/contact/index.html">Contact us</a></div>
+      <div><h4>Get started</h4><a href="/contact/index.html">Request a consultation</a><a href="/streamlined-plus/index.html">The $99 Offer</a><a href="mailto:hello@streamlinedcontent.com">hello@streamlinedcontent.com</a><a href="https://www.linkedin.com/in/streamlined-content/" rel="me noopener" target="_blank">LinkedIn ↗</a></div>
+    </nav>
     <div class="legal"><span>© 2026 Streamlined Content. Founded by <a href="/about/index.html">J.E. Lambert</a>. All rights reserved.</span><span class="locs"><span>Headquarters: Georgetown, SC</span><span>Remote service: Continental USA</span></span></div>
   </div>
 </footer>

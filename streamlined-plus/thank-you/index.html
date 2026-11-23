@@ -20,9 +20,7 @@
 <script src="/sc-wix.js" defer></script>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Instrument+Serif:ital@1&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
-<script type="application/ld+json">
-{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://www.streamlinedcontent.com/#org", "name": "Streamlined Content", "url": "https://www.streamlinedcontent.com/", "logo": "https://www.streamlinedcontent.com/images/logo-500.png", "slogan": "Human in the loop. Expert at the helm.", "description": "Digital marketing and answer-engine (GEO/AEO) consulting for small and mid-sized businesses. Websites, local search + AI discovery, AI content systems, and follow-up automation, run by a human expert.", "areaServed": "United States", "address": {"@type": "PostalAddress", "addressLocality": "Georgetown", "addressRegion": "SC", "addressCountry": "US"}, "founder": {"@type": "Person", "name": "J.E. Lambert"}, "knowsAbout": ["Answer engine optimization", "Generative engine optimization", "Local SEO", "Conversion websites", "Marketing automation", "Human-in-the-loop AI"], "contactPoint": {"@type": "ContactPoint", "contactType": "sales", "email": "hello@streamlinedcontent.com"}}, {"@type": "WebSite", "@id": "https://www.streamlinedcontent.com/#site", "url": "https://www.streamlinedcontent.com/", "name": "Streamlined Content", "publisher": {"@id": "https://www.streamlinedcontent.com/#org"}}, {"@type": "WebPage", "@id": "https://www.streamlinedcontent.com/streamlined-plus/thank-you/index.html#page", "url": "https://www.streamlinedcontent.com/streamlined-plus/thank-you/index.html", "name": "Order received | Streamlined+", "description": "Your Streamlined+ report is in the queue. A strategist will be in touch within the 48-hour window.", "isPartOf": {"@id": "https://www.streamlinedcontent.com/#site"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.streamlinedcontent.com/"}, {"@type": "ListItem", "position": 2, "name": "Streamlined+", "item": "https://www.streamlinedcontent.com/streamlined-plus/index.html"}, {"@type": "ListItem", "position": 3, "name": "Thank you", "item": "https://www.streamlinedcontent.com/streamlined-plus/thank-you/index.html"}]}]}
-</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://www.streamlinedcontent.com/#org", "name": "Streamlined Content", "url": "https://www.streamlinedcontent.com/", "logo": "https://www.streamlinedcontent.com/images/logo-500.png", "slogan": "Human in the loop. Expert at the helm.", "description": "Digital marketing and answer-engine (GEO/AEO) consulting for small and mid-sized businesses. Websites, local search + AI discovery, AI content systems, and follow-up automation, run by a human expert.", "areaServed": "United States", "address": {"@type": "PostalAddress", "addressLocality": "Georgetown", "addressRegion": "SC", "addressCountry": "US"}, "founder": {"@type": "Person", "name": "J.E. Lambert"}, "knowsAbout": ["Answer engine optimization", "Generative engine optimization", "Local SEO", "Conversion websites", "Marketing automation", "Human-in-the-loop AI"], "contactPoint": {"@type": "ContactPoint", "contactType": "sales", "email": "hello@streamlinedcontent.com"}, "sameAs": ["https://www.linkedin.com/in/streamlined-content/"]}, {"@type": "WebSite", "@id": "https://www.streamlinedcontent.com/#site", "url": "https://www.streamlinedcontent.com/", "name": "Streamlined Content", "publisher": {"@id": "https://www.streamlinedcontent.com/#org"}}, {"@type": "WebPage", "@id": "https://www.streamlinedcontent.com/streamlined-plus/thank-you/index.html#page", "url": "https://www.streamlinedcontent.com/streamlined-plus/thank-you/index.html", "name": "Order received | Streamlined+", "description": "Your Streamlined+ report is in the queue. A strategist will be in touch within the 48-hour window.", "isPartOf": {"@id": "https://www.streamlinedcontent.com/#site"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.streamlinedcontent.com/"}, {"@type": "ListItem", "position": 2, "name": "Streamlined+", "item": "https://www.streamlinedcontent.com/streamlined-plus/index.html"}, {"@type": "ListItem", "position": 3, "name": "Thank you", "item": "https://www.streamlinedcontent.com/streamlined-plus/thank-you/index.html"}]}]}</script>
 <style>
 :root{
   --ink:#171717; --ink-2:#1E1E1E; --surface:#222222; --surface-2:#2A2A2A;
@@ -239,6 +237,11 @@ footer .brand img{height:42px}
 footer .tag-line{font-family:var(--serif);font-style:italic;font-size:19px;color:var(--muted)}
 footer nav{display:flex;gap:26px;justify-content:flex-end;font-size:14px;color:var(--muted);flex-wrap:wrap}
 footer nav a:hover{color:var(--text)}
+footer nav.footnav{grid-column:1/-1;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:28px;justify-content:stretch;padding-top:8px}
+footer nav.footnav div{display:flex;flex-direction:column;gap:10px;min-width:0}
+footer nav.footnav h4{margin:0 0 4px;font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--lime);font-weight:500}
+footer nav.footnav a{overflow-wrap:anywhere}
+@media (max-width:760px){footer nav.footnav{grid-template-columns:repeat(2,minmax(0,1fr))}}
 footer .legal{grid-column:1/-1;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:13px;color:var(--faint);padding-top:26px;border-top:1px solid var(--line)}
 footer .legal .locs span::before{content:"· ";color:var(--lime)}
 footer .legal .locs span:first-child::before{content:""}
@@ -534,7 +537,7 @@ footer .newsletter .form-msg{margin-top:8px}
       <a href="/index.html#process" data-nav="process">Our process</a>
       <a href="/bots/index.html" data-nav="bots">For bots</a>
     </nav>
-    <a class="btn btn-lime header-cta" href="/growth-blueprint/index.html">Let's talk <span class="arrow">↗</span></a>
+    <a class="btn btn-lime header-cta" href="/contact/index.html">Request a consultation <span class="arrow">↗</span></a>
     <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="nav" aria-label="Menu"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
   </div>
 </header>
@@ -561,7 +564,12 @@ footer .newsletter .form-msg{margin-top:8px}
       <label for="nl-email">The occasional long read. No slop.</label>
       <div><input id="nl-email" name="email" type="email" autocomplete="email" placeholder="you@company.com" required><button class="btn btn-lime" type="submit">Subscribe</button></div>
     </form>
-    <nav aria-label="Footer"><a href="/about/index.html">About</a><a href="/solutions/index.html">Solutions</a><a href="/insights/index.html">Our thinking</a><a href="/index.html#process">Our process</a><a href="/index.html#industries">Industries</a><a href="/streamlined-plus/index.html">Streamlined+</a><a href="/bots/index.html">For bots</a><a href="/growth-blueprint/index.html">Let's talk</a></nav>
+    <nav class="footnav" aria-label="Footer">
+      <div><h4>Solutions</h4><a href="/solutions/websites/index.html">Conversion websites</a><a href="/solutions/local-search/index.html">Local search + AI</a><a href="/solutions/content-systems/index.html">Content marketing &amp; AI</a><a href="/solutions/lead-automation/index.html">Marketing automation</a><a href="/solutions/index.html">All solutions</a></div>
+      <div><h4>Industries</h4><a href="/industries/professional-services/index.html">Professional services</a><a href="/industries/home-trade-field-services/index.html">Home, trade &amp; field</a><a href="/industries/health-wellness/index.html">Health &amp; wellness</a><a href="/industries/saas-technology/index.html">SaaS &amp; technology</a><a href="/industries/financial-insurance-services/index.html">Financial &amp; insurance</a></div>
+      <div><h4>Company</h4><a href="/about/index.html">About J.E. Lambert</a><a href="/insights/index.html">Our thinking</a><a href="/index.html#process">Our process</a><a href="/bots/index.html">For bots</a><a href="/contact/index.html">Contact us</a></div>
+      <div><h4>Get started</h4><a href="/contact/index.html">Request a consultation</a><a href="/streamlined-plus/index.html">The $99 Offer</a><a href="mailto:hello@streamlinedcontent.com">hello@streamlinedcontent.com</a><a href="https://www.linkedin.com/in/streamlined-content/" rel="me noopener" target="_blank">LinkedIn ↗</a></div>
+    </nav>
     <div class="legal"><span>© 2026 Streamlined Content. Founded by <a href="/about/index.html">J.E. Lambert</a>. All rights reserved.</span><span class="locs"><span>Headquarters: Georgetown, SC</span><span>Remote service: Continental USA</span></span></div>
   </div>
 </footer>

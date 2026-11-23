@@ -20,9 +20,7 @@
 <script src="/sc-wix.js" defer></script>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Instrument+Serif:ital@1&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
-<script type="application/ld+json">
-{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://www.streamlinedcontent.com/#org", "name": "Streamlined Content", "url": "https://www.streamlinedcontent.com/", "logo": "https://www.streamlinedcontent.com/images/logo-500.png", "slogan": "Human in the loop. Expert at the helm.", "description": "Digital marketing and answer-engine (GEO/AEO) consulting for small and mid-sized businesses. Websites, local search + AI discovery, AI content systems, and follow-up automation, run by a human expert.", "areaServed": "United States", "address": {"@type": "PostalAddress", "addressLocality": "Georgetown", "addressRegion": "SC", "addressCountry": "US"}, "founder": {"@type": "Person", "name": "J.E. Lambert"}, "knowsAbout": ["Answer engine optimization", "Generative engine optimization", "Local SEO", "Conversion websites", "Marketing automation", "Human-in-the-loop AI"], "contactPoint": {"@type": "ContactPoint", "contactType": "sales", "email": "hello@streamlinedcontent.com"}}, {"@type": "WebSite", "@id": "https://www.streamlinedcontent.com/#site", "url": "https://www.streamlinedcontent.com/", "name": "Streamlined Content", "publisher": {"@id": "https://www.streamlinedcontent.com/#org"}}, {"@type": "WebPage", "@id": "https://www.streamlinedcontent.com/industries/saas-technology/index.html#page", "url": "https://www.streamlinedcontent.com/industries/saas-technology/index.html", "name": "Marketing for SaaS & Technology Companies | Streamlined Content", "description": "Get named in the AI-written shortlist: entity consistency, honest comparison pages, recent reviews and published pricing for product-led software companies competing for \"best tool for\" prompts.", "isPartOf": {"@id": "https://www.streamlinedcontent.com/#site"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.streamlinedcontent.com/"}, {"@type": "ListItem", "position": 2, "name": "Industries", "item": "https://www.streamlinedcontent.com/#industries"}, {"@type": "ListItem", "position": 3, "name": "SaaS & technology", "item": "https://www.streamlinedcontent.com/industries/saas-technology/index.html"}]}, {"@type": "Service", "name": "Marketing for SaaS & Technology Companies", "serviceType": "SaaS marketing", "provider": {"@id": "https://www.streamlinedcontent.com/#org"}, "url": "https://www.streamlinedcontent.com/industries/saas-technology/index.html", "audience": {"@type": "Audience", "audienceType": "SaaS and technology companies"}}]}
-</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://www.streamlinedcontent.com/#org", "name": "Streamlined Content", "url": "https://www.streamlinedcontent.com/", "logo": "https://www.streamlinedcontent.com/images/logo-500.png", "slogan": "Human in the loop. Expert at the helm.", "description": "Digital marketing and answer-engine (GEO/AEO) consulting for small and mid-sized businesses. Websites, local search + AI discovery, AI content systems, and follow-up automation, run by a human expert.", "areaServed": "United States", "address": {"@type": "PostalAddress", "addressLocality": "Georgetown", "addressRegion": "SC", "addressCountry": "US"}, "founder": {"@type": "Person", "name": "J.E. Lambert"}, "knowsAbout": ["Answer engine optimization", "Generative engine optimization", "Local SEO", "Conversion websites", "Marketing automation", "Human-in-the-loop AI"], "contactPoint": {"@type": "ContactPoint", "contactType": "sales", "email": "hello@streamlinedcontent.com"}, "sameAs": ["https://www.linkedin.com/in/streamlined-content/"]}, {"@type": "WebSite", "@id": "https://www.streamlinedcontent.com/#site", "url": "https://www.streamlinedcontent.com/", "name": "Streamlined Content", "publisher": {"@id": "https://www.streamlinedcontent.com/#org"}}, {"@type": "WebPage", "@id": "https://www.streamlinedcontent.com/industries/saas-technology/index.html#page", "url": "https://www.streamlinedcontent.com/industries/saas-technology/index.html", "name": "Marketing for SaaS & Technology Companies | Streamlined Content", "description": "Get named in the AI-written shortlist: entity consistency, honest comparison pages, recent reviews and published pricing for product-led software companies competing for \"best tool for\" prompts.", "isPartOf": {"@id": "https://www.streamlinedcontent.com/#site"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.streamlinedcontent.com/"}, {"@type": "ListItem", "position": 2, "name": "Industries", "item": "https://www.streamlinedcontent.com/#industries"}, {"@type": "ListItem", "position": 3, "name": "SaaS & technology", "item": "https://www.streamlinedcontent.com/industries/saas-technology/index.html"}]}, {"@type": "Service", "name": "Marketing for SaaS & Technology Companies", "serviceType": "SaaS marketing", "provider": {"@id": "https://www.streamlinedcontent.com/#org"}, "url": "https://www.streamlinedcontent.com/industries/saas-technology/index.html", "audience": {"@type": "Audience", "audienceType": "SaaS and technology companies"}}]}</script>
 <style>
 :root{
   --ink:#171717; --ink-2:#1E1E1E; --surface:#222222; --surface-2:#2A2A2A;
@@ -239,6 +237,11 @@ footer .brand img{height:42px}
 footer .tag-line{font-family:var(--serif);font-style:italic;font-size:19px;color:var(--muted)}
 footer nav{display:flex;gap:26px;justify-content:flex-end;font-size:14px;color:var(--muted);flex-wrap:wrap}
 footer nav a:hover{color:var(--text)}
+footer nav.footnav{grid-column:1/-1;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:28px;justify-content:stretch;padding-top:8px}
+footer nav.footnav div{display:flex;flex-direction:column;gap:10px;min-width:0}
+footer nav.footnav h4{margin:0 0 4px;font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--lime);font-weight:500}
+footer nav.footnav a{overflow-wrap:anywhere}
+@media (max-width:760px){footer nav.footnav{grid-template-columns:repeat(2,minmax(0,1fr))}}
 footer .legal{grid-column:1/-1;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:13px;color:var(--faint);padding-top:26px;border-top:1px solid var(--line)}
 footer .legal .locs span::before{content:"· ";color:var(--lime)}
 footer .legal .locs span:first-child::before{content:""}
@@ -481,7 +484,7 @@ footer .newsletter .form-msg{margin-top:8px}
       <a href="/index.html#process" data-nav="process">Our process</a>
       <a href="/bots/index.html" data-nav="bots">For bots</a>
     </nav>
-    <a class="btn btn-lime header-cta" href="/growth-blueprint/index.html">Let's talk <span class="arrow">↗</span></a>
+    <a class="btn btn-lime header-cta" href="/contact/index.html">Request a consultation <span class="arrow">↗</span></a>
     <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="nav" aria-label="Menu"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
   </div>
 </header>
@@ -496,7 +499,7 @@ footer .newsletter .form-msg{margin-top:8px}
         <div style="display:flex;gap:10px;flex-wrap:wrap"><span class="pill"><span class="dot" style="background:#6FB6F0"></span>Industry</span><span class="pill"><span class="dot" style="background:#F09AC8"></span>SaaS &amp; technology</span></div>
         <h1 style="margin-top:26px">The shortlist is written by a model now. <b>Be on it before the demo.</b></h1>
         <p class="lede">Half of B2B software buyers now start in an AI chatbot, not a search engine, and seven in ten chose a different vendor than they planned because of what it said. "Best tool for" is answered in one paragraph with three names in it. Comparison pages, entity work and reviews decide whether one of them is yours.</p>
-        <div class="actions"><a class="btn btn-lime" href="/growth-blueprint/index.html">Get a category visibility audit <span class="arrow">↗</span></a><a class="btn btn-ghost" href="#promised-land" data-anchor>See what changes</a></div>
+        <div class="actions"><a class="btn btn-lime" href="/contact/index.html">Request a consultation <span class="arrow">↗</span></a><a class="btn btn-ghost" href="#promised-land" data-anchor>See what changes</a></div>
         <div class="hero-meta"><span>Product-led · B2B SaaS · dev tools</span><span>Entity-first</span><span>Comparison-ready</span></div>
       </div>
       <div class="card" style="padding:26px;display:flex;flex-direction:column;gap:14px">
@@ -594,12 +597,12 @@ footer .newsletter .form-msg{margin-top:8px}
 <span class="k">channels:</span> <span class="v">[website, search-ai-discovery, content-system, automation]</span>
 <span class="k">guardrails:</span> <span class="v">[no-customer-data, product-review, verifiable-comparisons]</span>
 <span class="k">outcome:</span> <span class="v">trials and qualified pipeline</span>
-<span class="k">next_step:</span> <span class="v">/growth-blueprint/index.html</span></pre>
+<span class="k">next_step:</span> <span class="v">/contact/index.html</span></pre>
     </div>
   </div>
 
   <div class="wrap section tight" style="padding-top:0">
-    <div class="cta lime"><div><span class="label"><i></i>Next steps</span><h2 style="margin-top:14px">Find out which shortlists you're missing from.</h2><p>A tailored look at where you stand across search, maps and AI answers — and the first thing to fix.</p></div><a class="btn btn-ink" href="/growth-blueprint/index.html">Get a category visibility audit <span class="arrow">↗</span></a></div>
+    <div class="cta lime"><div><span class="label"><i></i>Next steps</span><h2 style="margin-top:14px">Find out which shortlists you're missing from.</h2><p>A tailored look at where you stand across search, maps and AI answers — and the first thing to fix.</p></div><a class="btn btn-ink" href="/contact/index.html">Request a consultation <span class="arrow">↗</span></a></div>
     <p class="src">Sources: G2, <a href="https://research.g2.com/" rel="noopener">The Answer Economy: How AI Search Is Rewiring B2B Software Buying</a> (1,076 B2B software buyers, March 2026), as reported by <a href="https://demandgenreport.com/industry-news/news-brief/half-of-b2b-software-buyers-now-start-their-research-with-ai-chatbots-g2/52737" rel="noopener">Demand Gen Report</a>. Search and AI-answer panels are illustrative. Testimonial and results tiles are placeholders until a client story is cleared for publication.</p>
   </div>
 </main>
@@ -611,7 +614,12 @@ footer .newsletter .form-msg{margin-top:8px}
       <label for="nl-email">The occasional long read. No slop.</label>
       <div><input id="nl-email" name="email" type="email" autocomplete="email" placeholder="you@company.com" required><button class="btn btn-lime" type="submit">Subscribe</button></div>
     </form>
-    <nav aria-label="Footer"><a href="/about/index.html">About</a><a href="/solutions/index.html">Solutions</a><a href="/insights/index.html">Our thinking</a><a href="/index.html#process">Our process</a><a href="/index.html#industries">Industries</a><a href="/streamlined-plus/index.html">Streamlined+</a><a href="/bots/index.html">For bots</a><a href="/growth-blueprint/index.html">Let's talk</a></nav>
+    <nav class="footnav" aria-label="Footer">
+      <div><h4>Solutions</h4><a href="/solutions/websites/index.html">Conversion websites</a><a href="/solutions/local-search/index.html">Local search + AI</a><a href="/solutions/content-systems/index.html">Content marketing &amp; AI</a><a href="/solutions/lead-automation/index.html">Marketing automation</a><a href="/solutions/index.html">All solutions</a></div>
+      <div><h4>Industries</h4><a href="/industries/professional-services/index.html">Professional services</a><a href="/industries/home-trade-field-services/index.html">Home, trade &amp; field</a><a href="/industries/health-wellness/index.html">Health &amp; wellness</a><a href="/industries/saas-technology/index.html">SaaS &amp; technology</a><a href="/industries/financial-insurance-services/index.html">Financial &amp; insurance</a></div>
+      <div><h4>Company</h4><a href="/about/index.html">About J.E. Lambert</a><a href="/insights/index.html">Our thinking</a><a href="/index.html#process">Our process</a><a href="/bots/index.html">For bots</a><a href="/contact/index.html">Contact us</a></div>
+      <div><h4>Get started</h4><a href="/contact/index.html">Request a consultation</a><a href="/streamlined-plus/index.html">The $99 Offer</a><a href="mailto:hello@streamlinedcontent.com">hello@streamlinedcontent.com</a><a href="https://www.linkedin.com/in/streamlined-content/" rel="me noopener" target="_blank">LinkedIn ↗</a></div>
+    </nav>
     <div class="legal"><span>© 2026 Streamlined Content. Founded by <a href="/about/index.html">J.E. Lambert</a>. All rights reserved.</span><span class="locs"><span>Headquarters: Georgetown, SC</span><span>Remote service: Continental USA</span></span></div>
   </div>
 </footer>
