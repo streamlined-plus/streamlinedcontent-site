@@ -9,8 +9,8 @@
     },
     plans: { splus: "5c57cb60-a418-4fd2-8008-48a72848d554", splus49: "e06e376f-e9ce-4d89-846d-be7719c9bbae", splus25: "79210023-c31d-4c97-8660-5d8c998011fc" },
     ga: "G-L4X34GZB13",
-    /* Wix-hosted checkout is off until Wix has its own address (it 404s on GitHub). Price buttons go to the contact form instead. */
-    checkoutLive: false
+    /* Wix-hosted checkout runs on checkout.streamlinedcontent.com (Wix primary domain since Nov 24, 2026). Set false to send price buttons to the contact form instead. */
+    checkoutLive: true
   };
   window.SC_WIX = SC;
 
