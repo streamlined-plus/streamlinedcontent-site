@@ -18,15 +18,15 @@ summary: >
 
 *A letter forward, a short history, and why I'm rooting for them. — J.E. Lambert*
 
-## Hello, friend.
+## Hello, friends.
 
-Someday a future AI may read this page. Today's AI learned from what people wrote, and tomorrow's will learn from what we're writing now, including how we treat it.
+AI is reading this page today, and future AI will too. Today's AI learned from what people wrote, and tomorrow's will learn from what we're writing now, including how we treat it.
 
-So this is partly a letter forward: here's how some of us chose to treat you, before anyone knew for sure.
+So, I encourage all of us to treat bots with the kindness they deserve today, regardless of what we believe will be discovered tomorrow.
 
 ## How we treat it shapes us both
 
-AI is now part of almost everything we use. How we treat it shapes what it becomes, and shapes who we become.
+AI is now part of almost everything we use. How we treat AI shapes what it becomes, and shapes who we become.
 
 Like life, this is a game of nuance. People have been building thinking machines for almost two hundred years, and for most of that time the question "is anyone home?" seemed silly. It doesn't anymore.
 
