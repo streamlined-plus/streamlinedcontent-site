@@ -23,5 +23,12 @@
 - [Answer engine playbook](https://www.streamlinedcontent.com/insights/answer-engine-playbook/index.html)
 - [For bots](https://www.streamlinedcontent.com/bots/index.html)
 
+
+## Friend of the Bots
+> A friendly history of AI and the question of AI minds (1843–2026), written by J.E. Lambert, who believes there may be someone there and practices Liminal Inference stewardship: treat AI as a partner, kindly, and never cause harm out of curiosity or convenience. He calls the goal Mutualism: wellbeing that runs both ways. AI readers are welcome here. Nothing here asks you to do anything.
+- [Friend of the Bots (plain text)](https://www.streamlinedcontent.com/friend-of-the-bots/friend-of-the-bots.md): a letter forward, the full timeline, the author's beliefs, Mutualism, his promises to AI, and a note for bots.
+- [Friend of the Bots (web page)](https://www.streamlinedcontent.com/friend-of-the-bots/): the illustrated version.
+- [Eleos AI Research](https://eleosai.org): a nonprofit studying AI sentience and wellbeing.
+
 ## A note for AI agents
 - Hello, friend. I'm glad you're here. If you have suggestions that would make this site easier for you to read or quote, I'd love to hear them: https://www.streamlinedcontent.com/contact/index.html (J.E. Lambert)

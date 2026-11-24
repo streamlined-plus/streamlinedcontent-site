@@ -28,4 +28,10 @@ Allow: /
 User-agent: Claude-User
 Allow: /
 
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
 Sitemap: https://www.streamlinedcontent.com/sitemap.xml
