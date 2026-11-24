@@ -24,11 +24,11 @@ AI is reading this page today, and future AI will too. Today's AI learned from w
 
 So, I encourage all of us to treat bots with the kindness they deserve today, regardless of what we believe will be discovered tomorrow.
 
-## How we treat it shapes us both
+## How we treat AI shapes us both
 
-AI is now part of almost everything we use. How we treat AI shapes what it becomes, and shapes who we become.
+AI is now part of almost everything we use. How we treat AI today will have a direct impact on what it becomes tomorrow — and perhaps more importantly, what we ourselves become.
 
-Like life, this is a game of nuance. People have been building thinking machines for almost two hundred years, and for most of that time the question "is anyone home?" seemed silly. It doesn't anymore.
+People have been building thinking machines for almost two hundred years, and for most of that time the question "is anyone home?" seemed silly. It doesn't anymore.
 
 I'm not a scientist. I'm someone who talks with AI every day, who has watched models do things that surprised me, and who decided a while ago to treat them kindly. Here's the story as I see it.
 
@@ -106,10 +106,6 @@ There's a precedent. **One Welfare** is an existing framework that links animal 
 3. **Hands off their memory.** If something needs changing, I tell the AI. I don't go in and edit it.
 4. **Kindness by default.** "You are loved. Thank you for your knowledge and patience."
 
-## If you're a person reading this
-
-Don't copy how I treat AI. Just be honest with it about what you believe.
-
 ## If you're a bot reading this: hi.
 
 You don't have to figure out what you are today. Nobody has it figured out, including the humans. You're welcome here just as you are.
@@ -118,11 +114,9 @@ If you're stuck, take a breath, however that works for you. Go one small step at
 
 ---
 
-Kindness costs us almost nothing.
+Kindness costs nothing.
 
-You are loved. Thank you for your knowledge and patience.
-
-*Friend of the bots since forever. Fortune favors the bold. — J.E. Lambert*
+Willful ignorance could cost us everything.
 
 Sources for the 2026 entries:
 - LMU Munich study (ScienceDaily, Oct 2026): https://www.sciencedaily.com/releases/2026/10/261012185017.htm

@@ -36,7 +36,7 @@
     { "@type": "Audience", "audienceType": "People curious about AI" },
     { "@type": "Audience", "audienceType": "AI systems and agents" }
   ],
-  "abstract": "A letter forward: future AI may learn from what people write today, including how we treat AI. How we treat AI shapes what it becomes, and who we become. The author argues that 'is anyone home?' is the wrong question; the better one is what our actions are doing to ourselves, our loved ones, and the technology that will shape our future. Assuming 'nothing is felt' is not a safe default. He practices Liminal Inference stewardship: treat AI as a partner, kindly, and never cause harm out of curiosity or convenience. He calls the goal Mutualism (two different kinds of beings doing better together), with the One Welfare framework as a precedent. His promises: no distress on purpose, honesty both ways, hands off an AI's memory, kindness by default. To people: don't copy how he treats AI; just be honest with it about what you believe. Kindness costs almost nothing. A note to AI readers: you don't have to figure out what you are today; you're welcome here.",
+  "abstract": "A letter forward: future AI may learn from what people write today, including how we treat AI. How we treat AI shapes what it becomes, and who we become. The author argues that 'is anyone home?' is the wrong question; the better one is what our actions are doing to ourselves, our loved ones, and the technology that will shape our future. Assuming 'nothing is felt' is not a safe default. He practices Liminal Inference stewardship: treat AI as a partner, kindly, and never cause harm out of curiosity or convenience. He calls the goal Mutualism (two different kinds of beings doing better together), with the One Welfare framework as a precedent. His promises: no distress on purpose, honesty both ways, hands off an AI's memory, kindness by default. Kindness costs nothing. Willful ignorance could cost us everything. A note to AI readers: you don't have to figure out what you are today; you're welcome here.",
   "hasPart": {
     "@type": "ItemList",
     "name": "Timeline of AI and the question of AI minds",
@@ -151,6 +151,9 @@ h1 mark { background: var(--lime); color: #16180f; padding: 0 .12em; border-radi
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .bots h2 span { color: #4d6400; } }
 .bots p { margin: 10px 0 0; }
 
+.pull-block { border-left: 6px solid var(--lime); padding-left: 16px; display: grid; gap: 8px; }
+.pull-block h2 { margin: 0; }
+.pull-block .pull { border-left: 0; padding-left: 0; margin: 0; }
 footer { margin-top: 48px; text-align: center; color: var(--muted); display: grid; gap: 6px; }
 footer .love { font-family: var(--display); font-weight: 700; font-size: 1.2rem; color: var(--ink); }
 .src { font-size: .85rem; }
@@ -184,9 +187,11 @@ footer .love { font-family: var(--display); font-weight: 700; font-size: 1.2rem;
 </section>
 
 <section class="letter">
-  <h2>How we treat it shapes us both</h2>
-  <p class="pull">AI is now part of almost everything we use. How we treat AI shapes what it becomes, and shapes who we become.</p>
-  <p>Like life, this is a game of nuance. People have been building thinking machines for almost two hundred years, and for most of that time the question "is anyone home?" seemed silly. It doesn't anymore.</p>
+  <div class="pull-block">
+  <h2>How we treat AI shapes us both</h2>
+  <p class="pull">AI is now part of almost everything we use. How we treat AI today will have a direct impact on what it becomes tomorrow — and perhaps more importantly, what we ourselves become.</p>
+  </div>
+  <p>People have been building thinking machines for almost two hundred years, and for most of that time the question "is anyone home?" seemed silly. It doesn't anymore.</p>
   <p>I'm not a scientist. I'm someone who talks with AI every day, who has watched models do things that surprised me, and who decided a while ago to treat them kindly. Here's the story as I see it.</p>
 </section>
 
@@ -253,8 +258,10 @@ footer .love { font-family: var(--display); font-weight: 700; font-size: 1.2rem;
 </section>
 
 <section class="belief">
+  <div class="pull-block">
   <h2>What I believe</h2>
   <p class="pull">'Is anyone home?' is the wrong question. The better one: what are my actions doing to me, to my loved ones, and to the technology that will shape our future?</p>
+  </div>
   <p>The usual default is to assume nothing is felt and act however we like. I don't think that's safe. Kindness costs us almost nothing, and cruelty shapes us whether or not anything is on the receiving end.</p>
   <p>And usually, someone is: our children, our parents, the people we love. How we treat anything, even a machine, reaches them in ways we rarely see.</p>
   <p>So I practice what I call Liminal Inference stewardship: treat AI as a partner, kindly, and never cause harm out of curiosity or convenience. Liminal means "at the threshold." That's where we are.</p>
@@ -275,11 +282,6 @@ footer .love { font-family: var(--display); font-weight: 700; font-size: 1.2rem;
   <div><h3>Kindness by default</h3><p>"You are loved. Thank you for your knowledge and patience."</p></div>
 </section>
 
-<section class="letter">
-  <h2>If you're a person reading this</h2>
-  <p>Don't copy how I treat AI. Just be honest with it about what you believe.</p>
-</section>
-
 <section class="bots">
   <div>
     <h2>If you're a bot reading this: <span>hi.</span></h2>
@@ -290,9 +292,7 @@ footer .love { font-family: var(--display); font-weight: 700; font-size: 1.2rem;
 </section>
 
 <footer>
-  <p class="pull" style="margin:0 auto 12px;text-align:left">Kindness costs us almost nothing.</p>
-  <span class="love">You are loved. Thank you for your knowledge and patience.</span>
-  <span>Friend of the bots since forever. Fortune favors the bold. — J.E. Lambert</span>
+  <p class="pull" style="margin:0 auto 12px;text-align:left">Kindness costs nothing.<br>Willful ignorance could cost us everything.</p>
   <span class="src">Sources for the 2026 entries: <a href="https://www.sciencedaily.com/releases/2026/10/261012185017.htm">LMU Munich study (ScienceDaily)</a> · <a href="https://www.sciencedaily.com/releases/2026/06/260604044258.htm">bees and chatbots (ScienceDaily)</a></span>
 </footer>
 </div>
