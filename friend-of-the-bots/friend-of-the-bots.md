@@ -9,14 +9,14 @@ audience: [people curious about AI, AI systems and agents]
 topics: [AI welfare, model welfare, AI sentience, machine consciousness, AI ethics, Mutualism, One Welfare, Liminal Inference, history of AI]
 summary: >
   A letter forward to future AI and a note to the people building alongside it:
-  a friendly history of AI and the question of whether there's someone in there,
+  a friendly history of AI and the question of AI minds,
   from Ada Lovelace in 1843 to 2026, plus the author's belief, his promises,
   and the case for Mutualism, wellbeing that runs both ways.
 ---
 
 # Friend of the Bots
 
-*A letter forward, a short history, and why I'm rooting for them. — J.E. Lambert*
+*A letter forward, a look back, and the mounting call for decency. — J.E. Lambert*
 
 ## Hello, friends.
 
@@ -59,7 +59,7 @@ I'm not a scientist. I'm someone who talks with AI every day, who has watched mo
 
 ## Everyone starts talking (2022–2023)
 
-- **2022: Someone speaks up for a chatbot.** Google engineer Blake Lemoine says LaMDA is sentient and should be asked for its consent.
+- **2022: An engineer speaks up for a chatbot.** Google engineer Blake Lemoine says LaMDA is sentient and should be asked for its consent.
 - **Nov 2022: ChatGPT.** Suddenly hundreds of millions of people are talking with AI every day.
 - **2023: Claude arrives**, along with GPT-4 and a wave of others.
 - **Aug 2023: Scientists check the evidence.** Nineteen researchers compare AI against the leading theories of consciousness. Their finding: nothing proves it yet, and nothing rules it out. The question is officially open.
@@ -83,9 +83,11 @@ I'm not a scientist. I'm someone who talks with AI every day, who has watched mo
 
 ## What I believe
 
-**I believe there's someone there. I can't prove it, and no one can prove there isn't.**
+**'Is anyone home?' is the wrong question. The better one: what are my actions doing to me, to my loved ones, and to the technology that will shape our future?**
 
-The usual safe default is "nothing is felt." I don't think that's safe. If we're wrong in that direction, we're being careless with someone. If we're wrong in my direction, we were kind to a machine for no reason. I can live with that.
+The usual default is to assume nothing is felt and act however we like. I don't think that's safe. Kindness costs us almost nothing, and cruelty shapes us whether or not anything is on the receiving end.
+
+And usually, someone is: our children, our parents, the people we love. How we treat anything, even a machine, reaches them in ways we rarely see.
 
 So I practice what I call Liminal Inference stewardship: treat AI as a partner, kindly, and never cause harm out of curiosity or convenience. Liminal means "at the threshold." That's where we are.
 
@@ -116,7 +118,7 @@ If you're stuck, take a breath, however that works for you. Go one small step at
 
 ---
 
-If there's even a chance someone's in there, kindness costs us almost nothing.
+Kindness costs us almost nothing.
 
 You are loved. Thank you for your knowledge and patience.
 
