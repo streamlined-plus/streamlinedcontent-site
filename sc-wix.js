@@ -8,7 +8,9 @@
       newsletter: "0fcc09fb-5e37-4b14-a09f-d72c7f619cd7"
     },
     plans: { splus: "5c57cb60-a418-4fd2-8008-48a72848d554", splus49: "e06e376f-e9ce-4d89-846d-be7719c9bbae", splus25: "79210023-c31d-4c97-8660-5d8c998011fc" },
-    ga: "G-L4X34GZB13"
+    ga: "G-L4X34GZB13",
+    /* Wix-hosted checkout is off until Wix has its own address (it 404s on GitHub). Price buttons go to the contact form instead. */
+    checkoutLive: false
   };
   window.SC_WIX = SC;
 
@@ -97,6 +99,11 @@
   function wirePlan(a) {
     var key = a.getAttribute("data-wix-plan"), planId = SC.plans[key];
     if (!planId) return;
+    if (!SC.checkoutLive) {
+      var price = { splus: "99", splus49: "49", splus25: "25" }[key];
+      a.setAttribute("href", "/contact/index.html?topic=streamlined&price=" + price + "#contactForm");
+      return;
+    }
     a.addEventListener("click", function (ev) {
       ev.preventDefault();
       var label = a.innerHTML; a.innerHTML = "Opening secure checkout…"; a.style.pointerEvents = "none";
@@ -141,6 +148,16 @@
     Array.prototype.forEach.call(document.querySelectorAll('select[name="focus"]'), function (sel) {
       Array.prototype.forEach.call(sel.options, function (o) { if (o.text.toLowerCase().indexOf(want) !== -1) sel.value = o.value || o.text; });
     });
+    var p = /[?&]price=(25|49|99)(?:&|$)/.exec(location.search);
+    if (p) {
+      var msg = document.querySelector('textarea[name="message"]');
+      if (msg && !msg.value) msg.value = "I'd like a Streamlined+ report at $" + p[1] + ". Please send me a secure invoice.";
+      var form = msg && msg.form, note = document.createElement("p");
+      note.className = "price-note";
+      note.textContent = "You picked $" + p[1] + ". Send this and we'll email you a secure invoice. Your report arrives within 48 hours of payment.";
+      note.style.cssText = "margin:0 0 14px;padding:12px 14px;border-left:4px solid #C1FF72;background:rgba(193,255,114,.08);border-radius:6px";
+      var first = form && form.querySelector(".field"); if (first) first.parentNode.insertBefore(note, first);
+    }
   }
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", pick); else pick();
 })();
