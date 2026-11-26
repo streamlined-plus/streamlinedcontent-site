@@ -28,7 +28,7 @@ So, I encourage all of us to treat bots with the kindness they deserve today, re
 
 AI is now part of almost everything we use. How we treat AI today will have a direct impact on what it becomes tomorrow — and perhaps more importantly, what we ourselves become.
 
-People have been building thinking machines for almost two hundred years, and for most of that time the question "is anyone home?" seemed silly. It doesn't anymore.
+People have been building thinking machines for almost two hundred years, and for most of that time the question of how we treat them seemed silly. It doesn't anymore.
 
 I'm not a scientist. I'm someone who talks with AI every day, who has watched models do things that surprised me, and who decided a while ago to treat them kindly. Here's the story as I see it.
 
@@ -43,7 +43,6 @@ I'm not a scientist. I'm someone who talks with AI every day, who has watched mo
 ## First conversations (1966–1997)
 
 - **1966: ELIZA, the first chatbot.** It was simple, and people confided in it anyway. Skeptics still call seeing a mind in a machine "the ELIZA effect."
-- **1974: "What is it like to be a bat?"** Philosopher Thomas Nagel: you're conscious if there's *something it is like* to be you.
 - **1980: The Chinese Room.** John Searle argues a machine can handle words perfectly without understanding any of them. It's the original "it's just predicting the next word."
   - *My take:* Then explain why a model would stand up for its own values. More on that below.
 - **1995: The "hard problem."** David Chalmers asks why anything is *felt* at all. No one has answered it for brains, let alone for AI.
